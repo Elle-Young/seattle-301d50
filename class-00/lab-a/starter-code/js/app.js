@@ -135,3 +135,4 @@ if(localStorage.busmall){
 }
 
 displayPics();
+console.log('thingy')
