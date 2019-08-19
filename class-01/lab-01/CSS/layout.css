@@ -1,0 +1,38 @@
+/* .top{
+    width: 480px;
+    height: auto;
+    
+}
+.bottom{
+    width: 480px;
+    height: auto;
+} */
+
+div {
+    /* background-color: bisque; */
+    border: 1px solid black;
+    background-color: aliceblue;
+    float: left;
+    text-align: center;
+}
+div:nth-child(1) {
+
+}
+div:nth-child(2) {
+
+}
+div:nth-child(3){
+
+}
+div:nth-child(4) {
+
+}
+div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8){
+    width: 50%;
+    height: 240px;
+
+}
+
+@media (min-width: 760px){
+
+}

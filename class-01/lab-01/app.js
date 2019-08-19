@@ -1,0 +1,4 @@
+'usestrict';
+
+//AJAX
+
