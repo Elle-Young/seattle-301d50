@@ -37,39 +37,37 @@ catch(error){
 }
 });
 
+
+function Weather(time, weather) {
+  this.time = time;
+  this.weather = weather;
+  
+}
 //Weather
+
 app.get('/weather', (request, response)=>{
   try{
+    let arr = [];
     const darkskyData = require('./data/darksky.json');
     const time = darkskyData.currently.time;
     const weather = darkskyData.daily.summary;
+    
+    let bananas = new Weather(time, weather);
+  
+    response.send(bananas)
+    //iterate over darkskydata 7 times and create new weather object (as part of the constructor) push object to a new array and then return new array
 
-    const formattedData ={
-      // search_query: searchQuery, 
-      // formattedQuery: formattedQuery,
-      current_time: time, 
-      current_forcast: weather
-    }
-    response.send(formattedData)
+    
+    let timeData= darkskyData.daily.data[0];
+    response.send(timeData);
+
+
   } catch(error){
     console.error(error);
     response.send(error.message);
   }
 });
-//     const formattedData =
-//   }
-// })
-//   response.send(formattedData);
-  
-// }
-// }
 
-
-//new constructor function that takes in time and forcast, searches 'this.search_"data key"' for time/searches 'this.serach_"data key"' for forcast, end function
-//get data from file
-//for variable time find current time in data 
-// for variable forcast find current summary in data
-// for variable new object of constructor push time and forcast, send to formatted data. 
 
 
 
