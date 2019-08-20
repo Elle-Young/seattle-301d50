@@ -14,15 +14,15 @@ currently running location and weather aspects of application on libraries found
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information.
 ////////////////////////////////////////
 
-Number and name of feature: ____1 Location/Weather___
+Number and name of feature: ____1 Location____
 
 Estimate of time needed to complete: __1 hour___
 
 Start time: __10am___
 
-Finish time: __noon___
+Finish time: __11:45___
 
-Actual time needed to complete: __2hrs___
+Actual time needed to complete: __~2hrs___
 
 Summary:
 Using Jquery this app first states required configurations and libraries (including cors) then procceeds to aquire information through stated libraries found in the data directory. Once found, this data is compiled into an object and returned to the user through the browser at local host 3007. -->
